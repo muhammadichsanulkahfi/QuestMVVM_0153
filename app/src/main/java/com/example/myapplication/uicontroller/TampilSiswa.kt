@@ -64,15 +64,15 @@ fun TampilSiswa(
 
 
 
-package com.example.myarsitekturmvvm.view
+val items = listOf(
+    Pair("Nama", statusUiSiswa.nama),
+    Pair("Jenis Kelamin", statusUiSiswa.gender),
+    Pair("Alamat", statusUiSiswa.alamat)
+)
 
-import androidx.compose.runtime.Composable
-import com.example.myarsitekturmvvm.model.Siswa
-
-@Composable
-fun TampilSiswa(
-    statusUiSiswa: Siswa,
-    onBackButtonClicked: () -> Unit
-) {
-
+Column {
+    items.forEach { item ->
+        Text(item.first)
+        Text(item.second)
+    }
 }
