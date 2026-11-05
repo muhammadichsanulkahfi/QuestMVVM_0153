@@ -66,9 +66,8 @@ fun TampilSiswa(
 
 package com.example.myarsitekturmvvm.model
 
-object DataJK {
-    val JenisK = listOf(
-        R.string.laki,
-        R.string.wanita
-    )
-}
+data class Siswa(
+    val nama: String = "",
+    val gender: String = "",
+    val alamat: String = ""
+)
