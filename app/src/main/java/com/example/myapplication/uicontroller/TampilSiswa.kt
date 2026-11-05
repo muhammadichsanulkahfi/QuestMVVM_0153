@@ -64,13 +64,11 @@ fun TampilSiswa(
 
 
 
-import com.example.myarsitekturmvvm.view.uicontroller.SiswaApp
-import androidx.compose.foundation.layout.fillMaxSize
+package com.example.myarsitekturmvvm.model
 
-setContent {
-    MyArsitekturMVVMTheme {
-        SiswaApp(
-            modifier = Modifier.fillMaxSize()
-        )
-    }
+object DataJK {
+    val JenisK = listOf(
+        R.string.laki,
+        R.string.wanita
+    )
 }
