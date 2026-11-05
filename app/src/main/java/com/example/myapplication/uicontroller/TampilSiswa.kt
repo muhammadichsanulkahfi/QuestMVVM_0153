@@ -64,6 +64,18 @@ fun TampilSiswa(
 
 
 
-fun setSiswa(data: Siswa) {
-    _statusUI.value = data
+package com.example.myarsitekturmvvm.view
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+
+@Composable
+fun FormSiswa(
+    pilihanJK: List<String>,
+    onSubmitButtonClicked: (Siswa) -> Unit,
+    modifier: Modifier = Modifier
+) {
+
 }
+
+import com.example.myarsitekturmvvm.model.Siswa
