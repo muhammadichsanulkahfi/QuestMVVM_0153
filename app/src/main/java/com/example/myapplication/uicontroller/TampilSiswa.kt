@@ -64,13 +64,20 @@ fun TampilSiswa(
 
 
 
-OutlinedTextField(
-value = txtAlamat,
-onValueChange = {
-    txtAlamat = it
-},
-label = {
-    Text("Alamat Lengkap")
-},
-singleLine = true
-)
+Button(
+modifier = Modifier.fillMaxWidth(),
+enabled = txtNama.isNotEmpty() &&
+txtGender.isNotEmpty() &&
+txtAlamat.isNotEmpty(),
+onClick = {
+    onSubmitButtonClicked(
+        Siswa(
+            nama = txtNama,
+            gender = txtGender,
+            alamat = txtAlamat
+        )
+    )
+}
+) {
+    Text("Submit")
+}
