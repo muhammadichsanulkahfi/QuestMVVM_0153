@@ -64,10 +64,6 @@ fun TampilSiswa(
 
 
 
-package com.example.myarsitekturmvvm.model
+viewmodel
 
-data class Siswa(
-    val nama: String = "",
-    val gender: String = "",
-    val alamat: String = ""
-)
+SiswaViewModel.kt
