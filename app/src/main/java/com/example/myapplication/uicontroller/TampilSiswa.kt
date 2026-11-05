@@ -64,6 +64,10 @@ fun TampilSiswa(
 
 
 
-viewmodel
+package com.example.myarsitekturmvvm.viewmodel
 
-SiswaViewModel.kt
+import androidx.lifecycle.ViewModel
+
+class SiswaViewModel : ViewModel() {
+
+}
