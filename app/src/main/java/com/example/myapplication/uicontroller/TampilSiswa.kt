@@ -64,18 +64,14 @@ fun TampilSiswa(
 
 
 
-package com.example.myarsitekturmvvm.view
-
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-
-@Composable
-fun FormSiswa(
-    pilihanJK: List<String>,
-    onSubmitButtonClicked: (Siswa) -> Unit,
-    modifier: Modifier = Modifier
-) {
-
+var txtNama by remember {
+    mutableStateOf("")
 }
 
-import com.example.myarsitekturmvvm.model.Siswa
+var txtAlamat by remember {
+    mutableStateOf("")
+}
+
+var txtGender by remember {
+    mutableStateOf("")
+}
