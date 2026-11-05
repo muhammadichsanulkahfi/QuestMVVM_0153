@@ -64,16 +64,13 @@ fun TampilSiswa(
 
 
 
-pilihanJK.forEach { item ->
-    Row(
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        RadioButton(
-            selected = txtGender == item,
-            onClick = {
-                txtGender = item
-            }
-        )
-        Text(item)
-    }
-}
+OutlinedTextField(
+value = txtAlamat,
+onValueChange = {
+    txtAlamat = it
+},
+label = {
+    Text("Alamat Lengkap")
+},
+singleLine = true
+)
