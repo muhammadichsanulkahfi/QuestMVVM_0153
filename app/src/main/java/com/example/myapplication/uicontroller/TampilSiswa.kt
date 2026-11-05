@@ -64,14 +64,13 @@ fun TampilSiswa(
 
 
 
-var txtNama by remember {
-    mutableStateOf("")
-}
-
-var txtAlamat by remember {
-    mutableStateOf("")
-}
-
-var txtGender by remember {
-    mutableStateOf("")
-}
+OutlinedTextField(
+value = txtNama,
+onValueChange = {
+    txtNama = it
+},
+label = {
+    Text("Nama Lengkap")
+},
+singleLine = true
+)
