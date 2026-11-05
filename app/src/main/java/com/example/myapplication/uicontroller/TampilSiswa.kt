@@ -64,15 +64,27 @@ fun TampilSiswa(
 
 
 
-val items = listOf(
-    Pair("Nama", statusUiSiswa.nama),
-    Pair("Jenis Kelamin", statusUiSiswa.gender),
-    Pair("Alamat", statusUiSiswa.alamat)
-)
+package com.example.myarsitekturmvvm.view.uicontroller
 
-Column {
-    items.forEach { item ->
-        Text(item.first)
-        Text(item.second)
+enum class Navigasi {
+    Formulir,
+    Detail
+}
+
+@Composable
+fun SiswaApp() {
+    val navController = rememberNavController()
+
+    NavHost(
+        navController = navController,
+        startDestination = Navigasi.Formulir.name
+    ) {
+        composable(Navigasi.Formulir.name) {
+            // Halaman formulir
+        }
+
+        composable(Navigasi.Detail.name) {
+            // Halaman detail
+        }
     }
 }
