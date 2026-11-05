@@ -64,10 +64,9 @@ fun TampilSiswa(
 
 
 
-class MainActivity : ComponentActivity() {
+import com.example.myarsitekturmvvm.ui.theme.MyArsitekturMVVMTheme
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+setContent {
+    MyArsitekturMVVMTheme {
     }
 }
