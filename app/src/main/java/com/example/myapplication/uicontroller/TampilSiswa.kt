@@ -64,11 +64,6 @@ fun TampilSiswa(
 
 
 
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-
-private val _statusUI = MutableStateFlow(Siswa())
-
-val statusUI: StateFlow<Siswa> = _statusUI
-
-import com.example.myarsitekturmvvm.model.Siswa
+fun setSiswa(data: Siswa) {
+    _statusUI.value = data
+}
