@@ -64,20 +64,15 @@ fun TampilSiswa(
 
 
 
-Button(
-modifier = Modifier.fillMaxWidth(),
-enabled = txtNama.isNotEmpty() &&
-txtGender.isNotEmpty() &&
-txtAlamat.isNotEmpty(),
-onClick = {
-    onSubmitButtonClicked(
-        Siswa(
-            nama = txtNama,
-            gender = txtGender,
-            alamat = txtAlamat
-        )
-    )
-}
+package com.example.myarsitekturmvvm.view
+
+import androidx.compose.runtime.Composable
+import com.example.myarsitekturmvvm.model.Siswa
+
+@Composable
+fun TampilSiswa(
+    statusUiSiswa: Siswa,
+    onBackButtonClicked: () -> Unit
 ) {
-    Text("Submit")
+
 }
