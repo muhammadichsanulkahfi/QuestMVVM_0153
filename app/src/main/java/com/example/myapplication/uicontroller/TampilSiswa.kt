@@ -64,10 +64,10 @@ fun TampilSiswa(
 
 
 
-package com.example.myarsitekturmvvm
+class MainActivity : ComponentActivity() {
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.ui.Modifier
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+    }
+}
