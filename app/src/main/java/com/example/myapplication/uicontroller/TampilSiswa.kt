@@ -64,9 +64,13 @@ fun TampilSiswa(
 
 
 
-import com.example.myarsitekturmvvm.ui.theme.MyArsitekturMVVMTheme
+import com.example.myarsitekturmvvm.view.uicontroller.SiswaApp
+import androidx.compose.foundation.layout.fillMaxSize
 
 setContent {
     MyArsitekturMVVMTheme {
+        SiswaApp(
+            modifier = Modifier.fillMaxSize()
+        )
     }
 }
