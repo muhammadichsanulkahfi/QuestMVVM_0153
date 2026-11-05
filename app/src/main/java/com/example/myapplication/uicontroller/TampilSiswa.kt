@@ -64,10 +64,11 @@ fun TampilSiswa(
 
 
 
-package com.example.myarsitekturmvvm.viewmodel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 
-import androidx.lifecycle.ViewModel
+private val _statusUI = MutableStateFlow(Siswa())
 
-class SiswaViewModel : ViewModel() {
+val statusUI: StateFlow<Siswa> = _statusUI
 
-}
+import com.example.myarsitekturmvvm.model.Siswa
